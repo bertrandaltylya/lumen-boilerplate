@@ -21,6 +21,8 @@ $app = new Laravel\Lumen\Application(
     dirname(__DIR__)
 );
 
+class_alias(Flugg\Responder\Facades\Responder::class, 'Responder');
+class_alias(Flugg\Responder\Facades\Transformation::class, 'Transformation');
 $app->withFacades();
 
 $app->withEloquent();
